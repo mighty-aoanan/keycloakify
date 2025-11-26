@@ -1,0 +1,22 @@
+.kcFormHeaderClass {
+    border: 10px solid red;
+}
+.kcButtonClass {
+    background-color: red;
+    border-color: red;
+}
+.kcButtonClass:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+#kc-header-wrapper p {
+    color: #001a88;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    font-size: 4rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+    font-family: Myriad Pro;
+}

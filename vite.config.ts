@@ -7,6 +7,7 @@ export default defineConfig({
     plugins: [
         react(),
         keycloakify({
+            themeName: ["default", "defaultMBO"],
             accountThemeImplementation: "none"
         })
     ]
