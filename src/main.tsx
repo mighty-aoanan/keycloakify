@@ -22,5 +22,6 @@ createRoot(document.getElementById("root")!).render(
         ) : (
             <KcPage kcContext={window.kcContext} />
         )}
+
     </StrictMode>
 );

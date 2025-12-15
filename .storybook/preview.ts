@@ -6,6 +6,13 @@ const preview: Preview = {
             matchers: {
                 color: /(background|color)$/i,
                 date: /Date$/i
+            },
+            options: {
+                showPanel: true,
+                storySort: {
+                    method: "alphabetical",
+                    order: ["LOGIN", ["login", "info", "error", "login-otp"]]
+                }
             }
         }
     }

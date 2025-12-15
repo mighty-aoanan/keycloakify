@@ -1627,7 +1627,7 @@
     },
     "smtpServer": {},
     "loginTheme": "default",
-    "accountTheme": "",
+    "accountTheme": "default",
     "adminTheme": "",
     "emailTheme": "",
     "eventsEnabled": false,

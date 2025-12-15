@@ -8,7 +8,7 @@ import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
 
-export default function Template(props: TemplateProps<KcContext, I18n>) {
+export default function defaultTemplate(props: TemplateProps<KcContext, I18n>) {
     const {
         displayInfo = false,
         displayMessage = true,
@@ -22,7 +22,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
         i18n,
         doUseDefaultCss,
         classes,
-        children
+        children,
     } = props;
 
     const { kcClsx } = getKcClsx({ doUseDefaultCss, classes });
@@ -55,16 +55,8 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
         <div className={kcClsx("kcLoginClass")}>
             <div id="kc-header" className={kcClsx("kcHeaderClass")}>
                 <div id="kc-header-wrapper" className={kcClsx("kcHeaderWrapperClass")}>
-                    {/* {msg("loginTitleHtml", realm.displayNameHtml)} */}
-                   {(()=>{
-                    switch(kcContext.themeName){
-                        case "defaultMBO":
-                            return  <p>You’re in good hands</p>;
-                        default:
-                            return msg("loginTitleHtml", realm.displayNameHtml);
-                    }
-                   })()}
-                   
+                    {msg("loginTitleHtml", realm.displayNameHtml)}
+
                 </div>
             </div>
             <div className={kcClsx("kcFormCardClass")}>
